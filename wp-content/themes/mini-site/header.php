@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head dir="ltr" lang="en-US">
+  <head <?php language_attributes(); ?>>
     <meta charset="utf-8">
-    <title>Mini-site vitrine d'Illustr'&Vous</title>
+    <title><?php the_title(); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <meta name="keywords" content="Illustrations, Dessins, Cadeaux, Conception de sites, Sites, Créations graphiques, Graphismes" />
     <meta name="generator" content="Wordpress, smartgithg, Github, Photoshop, Illustrator">
     <link href="style.css" rel="stylesheet" media="screen">
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -17,12 +18,39 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body id="#" <?php body_class(); ?>>
 
   <div class="wrap">
       <header>
-        <h1>Bienvenue sur le</h1>
-        <h2><a><?php bloginfo('name'); ?></a></h2>
-        <img src="WordPress/wp-content/themes/mini-site/img/logo.png" alt="Logo d'Illustr'&Vous" title="Logo d'Illustr'&Vous">
-        <h3><?php bloginfo('description'); ?></h3>
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mini-site vitrine d'Illustr'&Vous</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Présentation</a></li>
+              <li><a href="#">Quelques réalisations</a></li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nos Services<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              <li><a href="#">Intégration WEB</a></li>
+              <li><a href="#">Webdesign</a></li>
+              <li><a href="#">Print</a></li>
+              <li><a href="#">Illustrations</a></li>
+              </ul>
+              </li>
+            </ul>
+            <p class="navbar-text pull-right"><a href="#" class="navbar-link">CV de Cloé Perrotin</a></p>
+
+          </div><!-- /.navbar-collapse -->
+        </nav>
       </header>
+  </div>

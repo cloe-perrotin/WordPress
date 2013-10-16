@@ -1,3 +1,7 @@
+ <!--ici la petite colonne 2 -->
+<div class="row">
+<div class="col-md-3">
+
 <div class="side">
   <h3>Outils</h3>
   <!-- Bouton RSS -->
@@ -19,3 +23,18 @@
     <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
   <?php endwhile; ?>
 </ul>
+
+<!-- Les widgets de "base/plugin" à wordpress (diff. de ceux que je pourrais créer) -->
+<div class="side">
+  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+    <!-- Partie qui s'affichera uniquement si les Widgets ne sont pas disponibles -->
+    <!-- Mais qui affichera les Widgets si ils sont disponibles -->
+  <?php endif; ?>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+</div>
+</div>
