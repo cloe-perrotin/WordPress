@@ -7,9 +7,9 @@
     <!-- Bootstrap -->
     <meta name="keywords" content="Illustrations, Dessins, Cadeaux, Conception de sites, Sites, Créations graphiques, Graphismes" />
     <meta name="generator" content="Wordpress, smartgithg, Github, Photoshop, Illustrator">
-    <link href="style.css" rel="stylesheet" media="screen">
+    <link href="wp-content/themes/mini-site/style.css" rel="stylesheet" media="screen">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="wp-content/themes/mini-site/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>

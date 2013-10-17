@@ -1,0 +1,42 @@
+//
+// Thumbs
+// --------------------------------------------------
+
+.thumbs { 
+  float: left; 
+  padding: @padding-small;
+}
+
+//
+// Thumbnails
+// --------------------------------------------------
+
+
+// Mixin and adjust the regular image class
+.thumbnail {
+  margin-left: @margingauche/2;
+  margin-top: @marginhaut*3.5;
+  }
+  .img-thumbnail();
+  display: block; // Override the inline-block from `.img-thumbnail`
+  margin-bottom: @marginbas;
+
+  > img {
+    .img-responsive();
+  }
+
+// Add a hover state for linked versions only
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: 1px dashed @coulrouge;
+}
+
+// Images and captions
+.thumbnail > img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail .caption {
+  padding: @padding-small;
+  color: @coulrouge;
+}

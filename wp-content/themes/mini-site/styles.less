@@ -7,3 +7,44 @@ Author: Cloé Perrotin
 Inspiration : bbxdesign, 4h18, openclassrooms, creativejuiz et bien d'autres...
 Author URI: 
 */
+
+/* En général */
+
+/* Articles avec miniatures */
+
+.entry{ 
+	width: 960px;
+	padding: @padding-medium;
+}
+
+.articles{
+	.antifloat();
+}
+
+.title { 
+	font-size: @font-size-base; 
+}
+
+.separateur {
+	.antifloat(@contenu);
+	float: left;
+	width: 100%;
+	height: 1px;
+	.border-bottom();
+}
+
+.read-more {
+	color: @coulblanc; 
+	margin-bottom: @marginbas; 
+	margin-top: @marginhaut;
+	float: right; 
+	padding: 3px; 
+	background-color: @coulnoir;
+	/* Css 3 */ 
+	.border-radius ();  
+	a{
+		&:hover{
+			color: @coulrouge; 
+		}
+	}
+}

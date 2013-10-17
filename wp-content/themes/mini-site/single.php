@@ -3,6 +3,14 @@
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
       <div <?php post_class(); ?>>
+        <div class="breadcrumb">
+            <?php
+                if(function_exists('bcn_display'))
+            {
+                bcn_display();
+            }
+            ?>
+        </div>
         <h1 class="post-title"><?php the_title(); ?></h1>
         <p class="post-info">
           Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.

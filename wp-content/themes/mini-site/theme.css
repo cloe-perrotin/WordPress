@@ -1,15 +1,4 @@
-padding: 4px;
-line-height: 1.428571429;
-background-color: #ffffff;
-border: 1px solid #dddddd;
-border-radius: 4px;
--webkit-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
-display: inline-block;
-max-width: 100%;
-height: auto;
-display: block;
-margin-bottom: 10px;.border-bottom {
+.border-bottom {
   border: solid 1px #991915;
 }
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
@@ -5987,10 +5976,9 @@ Author: Cloé Perrotin
 Inspiration : bbxdesign, 4h18, openclassrooms, creativejuiz et bien d'autres...
 Author URI: 
 */
-/* En général */
 /* Articles avec miniatures */
 .entry {
-  width: 960px;
+  width: 500px;
   padding: 8px;
 }
 .articles:before,
@@ -6007,6 +5995,10 @@ Author URI:
 }
 .title {
   font-size: 14px;
+}
+.thumbs {
+  float: left;
+  padding: 4px;
 }
 .separateur {
   float: left;
@@ -6040,177 +6032,4 @@ Author URI:
 }
 .read-more a:hover {
   color: #991915;
-}
-.breadcrumb {
-  padding: 16px;
-  margin-bottom: 10px;
-  list-style: none;
-  background-color: transparent;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.breadcrumb > li {
-  display: inline-block;
-}
-.breadcrumb > li + li:before {
-  content: "/\00a0";
-  padding: 4px;
-  color: #c1bfc0;
-}
-.breadcrumb a {
-  color: #c1bfc0;
-}
-.breadcrumb a:hover {
-  color: #991915;
-}
-.breadcrumb > .active > a,
-.breadcrumb > .active > a:hover,
-.breadcrumb > .active > a:focus {
-  color: #991915;
-  background-color: #f6f7f7;
-}
-.navbar-default {
-  background-color: #c1bfc0;
-  border-color: #991915;
-}
-.navbar-default .navbar-brand {
-  color: #991915;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #f6f7f7;
-  background-color: #991915;
-}
-.navbar-text {
-  color: #020303;
-}
-.navbar-nav > li > a {
-  color: #020303;
-}
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-  color: #f6f7f7;
-  background-color: #991915;
-}
-.navbar-nav > .active > a,
-.navbar-nav > .active > a:hover,
-.navbar-nav > .active > a:focus {
-  color: #991915;
-  background-color: #f6f7f7;
-}
-.navbar-toggle {
-  border-color: #c1bfc0;
-}
-.navbar-toggle:hover,
-.navbar-toggle:focus {
-  background-color: #991915;
-}
-.navbar-toggle .icon-bar {
-  background-color: #f6f7f7;
-}
-.navbar-collapse,
-.navbar-form {
-  border-color: #f6f7f7;
-}
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 5px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.navbar-nav.pull-right > li > .dropdown-menu,
-.navbar-nav > li > .dropdown-menu.pull-right {
-  left: auto;
-  right: 4px;
-}
-.navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.open > a,
-.open > a:hover,
-.open > a:focus {
-  background-color: #991915;
-  color: #f6f7f7;
-}
-.open > a .caret,
-.open > a:hover .caret,
-.open > a:focus .caret {
-  border-top-color: #c1bfc0;
-  border-bottom-color: #c1bfc0;
-}
-> .dropdown > a .caret {
-  border-top-color: #c1bfc0;
-  border-bottom-color: #c1bfc0;
-}
-@media (max-width: 767px) {
-  .open .dropdown-menu > li > a {
-    color: #020303;
-  }
-  .open .dropdown-menu > li > a:hover,
-  .open .dropdown-menu > li > a:focus {
-    color: #f6f7f7;
-    background-color: #991915;
-  }
-  .open .dropdown-menu > .active > a,
-  .open .dropdown-menu > .active > a:hover,
-  .open .dropdown-menu > .active > a:focus {
-    color: #991915;
-    background-color: #f6f7f7;
-  }
-}
-.navbar-link {
-  color: #020303;
-}
-.navbar-link:hover {
-  color: #991915;
-}
-.thumbs {
-  float: left;
-  padding: 4px;
-}
-.thumbnail {
-  margin-left: 10px;
-  margin-top: 35px;
-}
-> img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-a.thumbnail:hover,
-a.thumbnail:focus {
-  border-color: 1px dashed #991915;
-}
-.thumbnail > img {
-  margin-left: auto;
-  margin-right: auto;
-}
-.thumbnail .caption {
-  padding: 4px;
-  color: #991915;
-}
-.jumbotron {
-  padding: 8px;
-  margin-bottom: 10px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
-  color: #020303;
-  background-color: #f6f7f7;
-}
-.jumbotron h1 {
-  line-height: 1;
-  color: #991915;
-}
-.container {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
 }

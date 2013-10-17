@@ -1,6 +1,31 @@
 <?php
+	// Déclaration de la prise en charge des miniatures dans le thème
 	add_theme_support( 'post-thumbnails' );
 
+	// déclaration de la function pour redimentioner les miniatures 
+	if ( function_exists( 'add_image_size' ) ) {
+		add_image_size( 'homepage-thumb', 220, 120, true ); //(Image recadrée)
+	}
+	// Cette fonction change la longueur de l'extrait de l'article
+	function custom_excerpt_length( $length ) {
+		return 120; // Modifier 15 pour changer la longueur de l'extrait
+	}
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+	// Cette fonction personalise le lien permanent vers l'article 
+	function new_excerpt_more($more) {
+		global $post;
+		return '<a class="read-more" href="'. get_permalink($post->ID) . '">Lire la suite...</a>'; // Ligne a modifier
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
+
+	// pour afficher une image à la une dans les posts, les pages et le portfolio
+	add_action('after_theme_setup','gkp_add_post_thumbnail');
+		function gkp_add_post_thumbnail() {
+		add_theme_support( 'post-thumbnails', array( 'post', 'page', 'portfolio' ) );
+	}
+
+
+	// partie php pour custom perso mini-site
 	add_action('init', 'my_custom_init');
 		function my_custom_init()
 		{

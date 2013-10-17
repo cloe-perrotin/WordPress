@@ -1,0 +1,22 @@
+// clearfix
+
+.antifloat(@contenu: ".") {
+  &:before,
+  &:after {
+    content: @contenu; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.border-bottom{
+	border: solid 1px #991915; 
+}
+
+.border-radius (@radius: 3px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}

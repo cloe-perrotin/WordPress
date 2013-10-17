@@ -1,0 +1,23 @@
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+  padding: @padding-medium;
+  margin-bottom: @marginbas;
+  font-size: @jumbotron-font-size;
+  font-weight: 200;
+  line-height: (@line-height-base * 1.5);
+  color: @coulnoir;
+  background-color: @coulblanc;
+   }
+
+  .jumbotron h1 {
+    line-height: 1;
+    color: @coulrouge;
+  }
+
+  .container & {
+    .border-radius (@radius: 6px); // Only round corners at higher resolutions if contained in a container
+  }

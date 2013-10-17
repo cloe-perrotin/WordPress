@@ -1,0 +1,34 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: @padding-large;
+  margin-bottom: @marginhaut;
+  list-style: none;
+  background-color: transparent;
+  .border-radius (@radius: 6px);
+  > li {
+    display: inline-block;
+    &+li:before {
+      content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: @padding-small;
+      color: @coulgrisclair;
+    }
+  }
+  a {
+      color: @coulgrisclair;
+      &:hover{
+        color: @coulrouge;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @coulrouge;
+        background-color: @coulblanc;
+      }
+    }
+  } 

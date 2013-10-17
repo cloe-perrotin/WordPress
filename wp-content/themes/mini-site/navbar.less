@@ -1,0 +1,134 @@
+//
+// Navbars
+// --------------------------------------------------
+
+// Alternate navbars
+// --------------------------------------------------
+
+// Default navbar
+.navbar-default {
+  background-color: @coulgrisclair;
+  border-color: @coulrouge;
+  .navbar-brand {
+    color: @coulrouge;
+    &:hover,
+    &:focus {
+      color: @coulblanc;
+      background-color: @coulrouge;
+    	}
+  	}
+  }
+
+  .navbar-text {
+    color: @coulnoir;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @coulnoir;
+      &:hover,
+      &:focus {
+        color: @coulblanc;
+        background-color: @coulrouge;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @coulrouge;
+        background-color: @coulblanc;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @coulgrisclair;
+    &:hover,
+    &:focus {
+      background-color: @coulrouge;
+    }
+    .icon-bar {
+      background-color: @coulblanc;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @coulblanc;
+  }
+
+  // Dropdown menus
+  // Menu position and menu carets
+  .navbar-nav > li > .dropdown-menu {
+    margin-top: @marginhaut/2;
+  .border-radius (6px);
+  }
+ // Menu position and menu caret support for dropups via extra dropup class
+  .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  .border-radius (6px);
+  }
+  // Right aligned menus need alt position
+  .navbar-nav.pull-right > li > .dropdown-menu,
+  .navbar-nav > li > .dropdown-menu.pull-right {
+    left: auto;
+    right: @padding-small;
+  }
+
+// Buttons in navbars
+// Vertically center a button within a navbar (when *not* in a form).
+
+.navbar-btn {
+  .navbar-vertical-align(@input-height-base);
+}
+
+  // Dropdown menu items and carets
+  // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @coulrouge;
+        color: @coulblanc;
+        .caret {
+          border-top-color: @coulgrisclair;
+          border-bottom-color: @coulgrisclair;
+        }
+      }
+    }
+    > .dropdown > a .caret {
+      border-top-color: @coulgrisclair;
+      border-bottom-color: @coulgrisclair;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @coulnoir;
+          &:hover,
+          &:focus {
+            color: @coulblanc;
+            background-color: @coulrouge;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @coulrouge;
+            background-color: @coulblanc;
+          }
+        }
+      }
+    }
+
+  // Links in navbars
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @coulnoir;
+    &:hover {
+      color: @coulrouge;
+    }
+  }
